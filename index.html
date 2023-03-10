@@ -1,64 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.jpeg"/>
-    <meta charset="utf-8"/>
-    <style>
-      .ctr {
-        max-width: 100%;
-        margin: 0;
-      }
-      .icn {
-        width: 3%;
-        height: 3%;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>portfolio</title>
+    <meta name="description" content="Portfolio of me" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Felix</h1>
-    <img class="ctr" img src="assets/img/mypic_ocean.jpg" alt="pic">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/icon.jpg"
+              alt="Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Felix Wang</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experiences" class="header__link"> Experiences </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link"> Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
 
-    <p>
-    Hi!
-    </p>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
 
-    <p>
-    My name is Felix. I love everything related to technology. They are cool, aren’t they? I have experiences in many areas including cloud, OS, robotics, machine learning and data science. I always love exploring the newest technology, and I will challenge myself to keep learning.
-    </p>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
 
-    <p>
-    My coolest project, robotic microscope platform
-    </p>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hi, I'm Felix Wang</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            a data engineer intern at Tinder and a computer engineering masters student at UCSD.
+          </p>
+        </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XlJmwzgC33o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/shi-da-felix-wang-5611211b6/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/bhfxwangshida" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I love everything related to technology. I have explored many areas including full stack, 
+            data base, cloud, OS, robotics, machine learning and data science. I just love all kinds of tech!
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! I'm
+                <strong>Felix Wang</strong>
+                , a <strong>Data Engineer Intern</strong> at <strong>Tinder</strong> and a <strong> Computer Engineering Masters Student </strong> in <strong>UCSD</strong>.
+                I have individually upgraded the <strong>Airflow data pipeline</strong> infrastructure from v1 to v2 that is accounted for <strong>all data transfered in Tinder</strong>.
+                I was a <strong>full stack engineer</strong> in a Tinder's Hackathon project that builds a double date feature, I've involved in <strong>backend, frontend as well as UX design.</strong>
+                In school, I've built a <strong>Fault Tolerant Distributed Cloud Storage System</strong>, a <strong>Full Stack Development Project</strong> that colects and analyzes user's activity data 
+                and I designed several <strong>kernal</strong> mechanisms.
+              </p>
+              <p class="about__content-details-para">
+                I'm looking for a new grad position about backend, data base, cloud, infra or OS.
+                <strong>Contact</strong> me here.
+              </p>
+            </div>
+            <a href="mailto:wangsdar@gmail.com" class="btn btn--med btn--theme dynamicBgClr">Send Email</a>
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">JAVA</div>
+              <div class="skills__skill">C/C++</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Golang</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">Kubernetes</div>
+              <div class="skills__skill">Jenkins</div>
+              <div class="skills__skill">Airflow</div>
+              <div class="skills__skill">Spark</div>
+              <div class="skills__skill">Flink</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">Scala</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">jQuery</div>
+              <div class="skills__skill">Express.js</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experiences" class="experiences sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Experiences</span>
+        </h2>
 
-    <p>
-	I am currently pursuing a Master’s degree at UCSD. It has been an amazing experience, through which I gain interesting knowledge and practical skills on operating system, distributed cloud system, full-stack and machine learning.
-    </p>
+        <div class="experiences__content">
+          <div class="experiences__row">
+            <div class="experiences__row-img-cont">
+              <img
+                src="./assets/png/tinder.png"
+                alt="Tinder"
+                class="experiences__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="experiences__row-content">
+              <h3 class="experiences__row-content-title">Data Engineer @ Match Group LLC, Tinder</h3>
+              <p class="experiences__row-content-desc">
+                •	Established new Airflow cluster with Docker & Kubernetes in global production environment used across Tinder backend.<br>
+                •	Provisioned infrastructure for the Airflow cluster including Redis cluster on Elasticache, PostgreSQL on RDS and S3 in AWS.<br>
+                •	Integrated Airflow into CI/CD pipeline through in-house Terraform scripts and Jenkins, reducing deployment time by 30%.<br>
+                •	Coordinated with various teams and set up access control in pipeline process that enhanced data infrastructure security.<br>
+                •	Built offline batch processing Spark job on messages data and aggregated it into conversations for downstream backend application.<br>
+                •	Enhanced features in a Flink based self-serve ETL real-time streaming tool.<br>
+                •	Led a six people hackathon team to pitch a Double Dating Service idea appreciated by CTO and built a demo with Figma.<br>
+              </p>
+            </div>
+          </div>
+          <div class="experiences__row">
+            <div class="experiences__row-img-cont">
+              <img
+                src="./assets/png/yonyou.png"
+                alt="Yonyou"
+                class="experiences__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="experiences__row-content">
+              <h3 class="experiences__row-content-title">Software Development Engineer @ Yonyou</h3>
+              <p class="experiences__row-content-desc">
+                •	Designed database schema for a new Big Data platform of a Fortune Global 500 company with cross-departmental collaboration.<br>
+                •	Individually cleaned deprecated and duplicate fields in database, improving data efficiency by 40%.<br>
+                •	Built data architecture with Operational Data Store (ODS), Data Warehouse (DW) and Data Mart (DM), increasing data reliability.<br>
+                •	Established automated ETL data pipeline with Apache NiFi via MySQL server to simplify data wrangling process.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Projects done in UCSD and Tsinghua University.
+          </span>
+        </h2>
 
-    <h4>CONTACT</h4>
-
-    <img class="icn" img src="assets/img/email.png" alt="email">
-    <a href="mailto:sdw001@ucsd.edu" id="email-link">
-                                
-    sdw001@ucsd.edu
-                                
-    </a>
-
-    <h4>FOLLOW</h4>
-
-    <img class="icn" img src="assets/img/linkedin.png" alt="linkedin">
-    <a href="https://www.linkedin.com/in/shi-da-felix-wang-5611211b6/">
-
-    LinkedIn
-
-    </a>
-
-    <img class="icn" img src="assets/img/github.jpg" alt="github">
-    <a href="https://github.com/bhfxwangshida">
-
-    GitHub
-
-    </a>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Fault-Tolerant Distributed Cloud Storage System</h3>
+              <p class="projects__row-content-desc">
+                • Built a server with self-designed HTTP protocol that supports GET request method, server files and response status of HTTP/1.1.<br>
+                • Created a cloud file hosting service that syncs files based on TCP/IP protocol and interacts with clients via gRPC.<br>
+                • Constructed a fault-tolerant distributed storage system based on Raft algorithm to ensure data integrity and consistency.<br>
+                • Implemented distributed computing through different servers including partition of data, transmitting, sorting and merging data<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Full Stack Development</h3>
+              <p class="projects__row-content-desc">
+                • Established website’s analytical data collection functionality with JavaScript/CSS/HTML and visualized website’s usage history.<br>
+                • Set up user login system with REST API using jQuery, Node.js and Express.js to transfer data between MongoDB database.<br>
+                • Built several websites on same server through virtual host, including personal website hi.felixwangsd.xyz.<br>
+                • Developed server-side programs in CGI form using C and Perl<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Operating System Design and Implementation</h3>
+              <p class="projects__row-content-desc">
+                • Designed kernel code of context switching in UMIX system.<br>
+                • Constructed the process scheduling mechanism of the kernel, including FIFO, LIFO, Proportional and Round Robin.<br>
+                • Implemented IPC including synchronization and mutual exclusion via semaphores with Signal and Wait functions.<br>
+                • Built a thread package for UMIX which includes Initialize, Create, Yield, Get, Schedule, and Exit of thread operations.<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">AI-Robotics Microscope Platform</h3>
+              <p class="projects__row-content-desc">
+                • Created a novel predictive control theory to track a fly’s movement and increased tracking accuracy by 40%.<br>
+                • Collaborated with a cross-disciplinary team comprising biologists and engineers.<br>
+                • Built predictive models using recurrent neural network via TensorFlow and imported the model to embedded system via C++.<br>
+                • Wrangled data collected from robotics platform, camera and optical system for modelling in Python Environment.<br>
+              </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/XlJmwzgC33o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            <a href="mailto:wangsdar@gmail.com">wangsdar@gmail.com</a>
+          </span>
+        </h2>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/shi-da-felix-wang-5611211b6/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/bhfxwangshida">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Felix Wang</h4>
+            <p class="main-footer__short-desc">
+              Thanks for viewing!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
