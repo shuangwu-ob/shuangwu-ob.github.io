@@ -72,7 +72,7 @@ textarea {
       font-size: 4.5rem; } }
 
 .heading-sec__mb-bg {
-  margin-bottom: 11rem; }
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .heading-sec__mb-bg {
       margin-bottom: 8rem; } }
@@ -185,9 +185,10 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: no-repeat url("../assets/jpeg/ocean.jpg");
-  background-position: 48% -22%;
-  height: 100vh;
+  background: no-repeat url("../assets/jpeg/back1.jpg");
+  background-position: 75% 75%;
+  background-size: cover; 
+  height: 50vh;
   min-height: 80rem;
   max-height: 120rem;
   position: relative; }
@@ -259,13 +260,13 @@ textarea {
     .about__content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 3rem; }
+      margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .about__content-title {
           font-size: 2.4rem; } }
     .about__content-details-para {
-      font-size: 1.8rem;
-      color: grey;
+      font-size: 2rem;
+      color: #404040;
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem; }
@@ -273,7 +274,7 @@ textarea {
         font-weight: 700;
         margin: 0 3px; }
       .about__content-details-para:last-child {
-        margin-bottom: 4rem; }
+        margin-bottom: 6rem; }
 
 .experiences__row {
   display: grid;
@@ -327,12 +328,12 @@ textarea {
 
 .projects__row {
   display: block;
-  margin-bottom: 11rem; }
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem; } }
+      margin-bottom: 1rem; } }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       text-align: center; } }
@@ -357,16 +358,19 @@ textarea {
     .projects__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-title {
           font-size: 2.4rem; } }
     .projects__row-content-desc {
       font-size: 1.8rem;
-      color: grey;
+      color: #404040;
       max-width: 120rem;
       line-height: 1.7;
-      margin-bottom: 3rem; }
+      margin-bottom: 1rem; 
+      text-indent: -1em;
+      padding-left: 1em;
+    }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
