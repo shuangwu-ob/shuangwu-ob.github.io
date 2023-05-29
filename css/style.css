@@ -281,12 +281,12 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 2.3fr;
   grid-gap: 5rem;
-  margin-bottom: 11rem; }
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .experiences__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem; } }
+      margin-bottom: 1rem; } }
   @media only screen and (max-width: 56.25em) {
     .experiences__row {
       text-align: center; } }
@@ -297,6 +297,7 @@ textarea {
     overflow: hidden; }
   .experiences__row-img {
     width: 100%;
+    padding: 6rem 0;
     display: block;
     object-fit: cover; }
   .experiences__row-content {
@@ -313,16 +314,16 @@ textarea {
     .experiences__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
       @media only screen and (max-width: 37.5em) {
         .experiences__row-content-title {
           font-size: 2.4rem; } }
     .experiences__row-content-desc {
       font-size: 1.8rem;
-      color: grey;
+      color: #404040;
       max-width: 70rem;
       line-height: 1.7;
-      margin-bottom: 3rem; }
+      margin-bottom: 1rem; }
       @media only screen and (max-width: 37.5em) {
         .experiences__row-content-desc {
           font-size: 1.7rem; } }
@@ -371,6 +372,7 @@ textarea {
       margin-bottom: 1rem; 
       text-indent: -1em;
       padding-left: 1em;
+      text-align: left;
     }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
@@ -513,7 +515,7 @@ textarea {
   .project-details__desc-para {
     font-size: 1.8rem;
     line-height: 1.7;
-    color: grey;
+    color: #404040;
     margin-bottom: 2rem; }
 
 .project-details__tools-used {
