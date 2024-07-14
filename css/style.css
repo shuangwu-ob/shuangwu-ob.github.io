@@ -296,30 +296,30 @@ textarea {
   margin-bottom: 3rem; /* Reduce the bottom margin for the heading in the About section */
 }
 
-.experiences__row {
+.research__row {
   display: grid;
   grid-template-columns: 1fr 2.3fr;
   grid-gap: 5rem;
   margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
-    .experiences__row {
+    .research__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       margin-bottom: 1rem; } }
   @media only screen and (max-width: 56.25em) {
-    .experiences__row {
+    .research__row {
       text-align: center; } }
-  .experiences__row:last-child {
+  .research__row:last-child {
     margin-bottom: 0; }
-  .experiences__row-img-cont {
+  .research__row-img-cont {
     width: 100%;
     overflow: hidden; }
-  .experiences__row-img {
+  .research__row-img {
     width: 100%;
     padding: 6rem 0;
     display: block;
     object-fit: cover; }
-  .experiences__row-content {
+  .research__row-content {
     width: 100%;
     padding: 2rem 0;
     display: flex;
@@ -328,16 +328,16 @@ textarea {
     align-items: flex-start;
     vertical-align: middle; }
     @media only screen and (max-width: 56.25em) {
-      .experiences__row-content {
+      .research__row-content {
         align-items: center; } }
-    .experiences__row-content-title {
+    .research__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 1rem; }
       @media only screen and (max-width: 37.5em) {
-        .experiences__row-content-title {
+        .research__row-content-title {
           font-size: 2.4rem; } }
-    .experiences__row-content-desc {
+    .research__row-content-desc {
       font-size: 1.8rem;
       color: #404040;
       max-width: 70rem;
@@ -347,29 +347,29 @@ textarea {
 
     }
       @media only screen and (max-width: 37.5em) {
-        .experiences__row-content-desc {
+        .research__row-content-desc {
           font-size: 1.7rem; } }
 
-.projects__row {
+.cv__row {
   display: block;
   margin-bottom: 3rem; }
   @media only screen and (max-width: 56.25em) {
-    .projects__row {
+    .cv__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       margin-bottom: 1rem; } }
   @media only screen and (max-width: 56.25em) {
-    .projects__row {
+    .cv__row {
       text-align: center; } }
-  .projects__row:last-child {
+  .cv__row:last-child {
     margin-bottom: 0; }
-  .projects__row-img-cont {
+  .cv__row-img-cont {
     overflow: hidden; }
-  .projects__row-img {
+  .cv__row-img {
     width: 100%;
     display: block;
     object-fit: cover; }
-  .projects__row-content {
+  .cv__row-content {
     width: 100%;
     padding: 2rem 0;
     display: flex;
@@ -377,16 +377,16 @@ textarea {
     flex-direction: column;
     align-items: flex-start; }
     @media only screen and (max-width: 56.25em) {
-      .projects__row-content {
+      .cv__row-content {
         align-items: center; } }
-    .projects__row-content-title {
+    .cv__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 1rem; }
       @media only screen and (max-width: 37.5em) {
-        .projects__row-content-title {
+        .cv__row-content-title {
           font-size: 2.4rem; } }
-    .projects__row-content-desc {
+    .cv__row-content-desc {
       font-size: 1.8rem;
       color: #404040;
       max-width: 120rem;
@@ -397,7 +397,7 @@ textarea {
       text-align: left;
     }
       @media only screen and (max-width: 37.5em) {
-        .projects__row-content-desc {
+        .cv__row-content-desc {
           font-size: 1.7rem; } }
 
 .contact {
@@ -774,7 +774,14 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
-
+.embed-container {
+      height: 100vh;
+      width: 100%;
+    }
+.embed-container embed {
+      height: 100%;
+      width: 100%;
+    }
 @keyframes wheel {
   to {
     opacity: 0;
