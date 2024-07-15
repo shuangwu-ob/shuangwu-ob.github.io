@@ -301,12 +301,12 @@ textarea {
   grid-template-columns: 1fr 2.3fr;
   grid-gap: 5rem;
   margin-bottom: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .research__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       margin-bottom: 1rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .research__row {
       text-align: center; } }
   .research__row:last-child {
@@ -327,7 +327,7 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     vertical-align: middle; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .research__row-content {
         align-items: center; } }
     .research__row-content-title {
@@ -353,12 +353,12 @@ textarea {
 .cv__row {
   display: block;
   margin-bottom: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .cv__row {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
       margin-bottom: 1rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .cv__row {
       text-align: center; } }
   .cv__row:last-child {
@@ -376,7 +376,7 @@ textarea {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .cv__row-content {
         align-items: center; } }
     .cv__row-content-title {
